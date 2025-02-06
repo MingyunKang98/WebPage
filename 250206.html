@@ -6,23 +6,25 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
     <div class="alert-box" id="alert">알림창임
-        <button onclick="alertOpen()">
+        <button onclick="알림창열기('block');">
             닫기
         </button></div>
-    <button onclick="alertClose()">
+    <button onclick="알림창열기('none')">
         버튼
     </button>
 </body>
 <script>
 
-    function alertClose(){
-        document.getElementById('alert').style.display = 'block' ;
+    function 알림창열기(구멍){
+        document.getElementById('alert').style.display = 구멍;
     }
+
+    알림창열기('block')
+    알림창열기('none')
     
-    function alertOpen(){
-        document.getElementById('alert').style.display = 'none';
-    }
+    // function alertOpen(){
+    //     document.getElementById('alert').style.display = 'none';
+    // }
 </script>
 </html>
