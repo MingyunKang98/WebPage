@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>250207</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class='alert-box', id="alert">
+        <p id="title">알림창임</p>
+        <button onclick="알림창열기('none')"> 닫기 </button>
+    </div>
+    <button onclick="아이디및비번('아이디를입력하세요', 'block')""> 버튼1 </button>
+    <button onclick="아이디및비번('비밀번호를 입력하세요', 'block')"> 버튼2 </button>
+
+
+</body>
+<script>
+
+    function 아이디및비번(a, b){
+    // 1. p태그 내용을 아이디 입력으로 바꿈
+    document.getElementById('title').innerHTML = a;
+    // 2. 띄움
+    document.getElementById('alert').style.display = b;
+    }
+
+    function 알림창열기(구멍){
+        document.getElementById('alert').style.display = 구멍
+    }
+
+
+</script>
